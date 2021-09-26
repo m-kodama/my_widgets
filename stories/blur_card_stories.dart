@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:monarch_sample/widgets/blur_card.dart';
+import 'package:my_widgets/widgets/blur_card.dart';
 
 class BlurCardChild extends StatelessWidget {
   const BlurCardChild({Key? key}) : super(key: key);
