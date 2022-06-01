@@ -1,26 +1,25 @@
 import 'package:flutter/material.dart';
 
 Widget cards() => Scaffold(
-      backgroundColor: Colors.indigo,
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
+            SizedBox(
               width: double.infinity,
               height: 256,
-              color: Color(0xFFFAFAFA),
               child: Stack(
+                clipBehavior: Clip.none,
                 children: [
                   Positioned(
-                    top: -375,
-                    left: -450,
+                    top: -256 / 2 + 10,
+                    left: -(256 * 3 - 390) / 2,
                     child: Container(
-                      width: 256 * 5,
-                      height: 256 * 2,
+                      width: 256 * 3,
+                      height: 256,
                       decoration: const BoxDecoration(
                         color: Colors.indigo,
                         borderRadius: BorderRadius.all(
-                          Radius.elliptical(2000, 800),
+                          Radius.elliptical(256 * 3, 256),
                         ),
                       ),
                     ),
@@ -40,7 +39,6 @@ Widget cards() => Scaffold(
             ),
             Container(
               height: 1000,
-              color: Color(0xFFFAFAFA),
             ),
           ],
         ),
